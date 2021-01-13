@@ -17,10 +17,11 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('/movies', function () use ($router) {
-    return 'teste';
-});
+$router->get('api/v1/movies', 'MovieController@index');
 
-$router->get('movies/{id}/details', function ($id) {
-    return $id;
-});
+$router->get('api/v1/movies/{id}', 'MovieController@show');
+
+// $router->get('movies/{id}/details', function ($id) {
+//     return $id;
+// });
+

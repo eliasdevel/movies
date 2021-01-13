@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Lumen\Auth\Authorizable;
 
-class Movie extends Model implements AuthenticatableContract, AuthorizableContract
+class Rating extends Model implements AuthenticatableContract, AuthorizableContract
 {
     use Authenticatable, Authorizable, HasFactory;
 
@@ -31,5 +31,5 @@ class Movie extends Model implements AuthenticatableContract, AuthorizableContra
     //     'password',
     // ];
 
-    protected $table = 'movies';
+    protected $table = 'ratings';
 }
