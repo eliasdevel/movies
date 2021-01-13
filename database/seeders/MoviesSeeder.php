@@ -125,6 +125,6 @@ class MoviesSeeder extends Seeder
 
         ];
         
-        DB::table('movie')->insert($movies);
+        DB::table('movies')->insert($movies);
     }
 }

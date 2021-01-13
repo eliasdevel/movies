@@ -21,6 +21,19 @@ $router->get('api/v1/movies', 'MovieController@index');
 
 $router->get('api/v1/movies/{id}', 'MovieController@show');
 
+//
+$router->get('api/v1/ratings', 'RatingController@index');
+
+$router->get('api/v1/ratings/{id}', 'RatingController@show');
+
+$router->post('api/v1/ratings', 'RatingController@create');
+
+$router->put('api/v1/ratings/{id}', 'RatingController@update');
+
+$router->delete('api/v1/ratings/{id}', 'RatingController@destroy');
+
+
+
 // $router->get('movies/{id}/details', function ($id) {
 //     return $id;
 // });
